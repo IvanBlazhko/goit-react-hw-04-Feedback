@@ -9,8 +9,8 @@ export const FeedbackButtons = ({ stateItemIncrement, buttons }) => {
         <div key={button}>
           <button
             className={Style.feedback__btn}
-            onClick={stateItemIncrement}
-            name={button}
+            onClick={() => stateItemIncrement(button)}
+            type='button'
           >
             {button}
           </button>
